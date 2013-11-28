@@ -1,0 +1,7 @@
+.env
+node_modules
+components
+build
+selenium
+*.log
+test/screenshots

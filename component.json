@@ -1,0 +1,21 @@
+{
+  "name": "shoelace-modal",
+  "repo": "mvanasse/shoelace-modal",
+  "description": "A modal module for shoelace",
+  "version": "0.1.0",
+  "keywords": [
+    "shoelace"
+  ],
+  "dependencies": {
+    "CamShaft/component-angular": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "javascripts/index.js",
+  "scripts": [
+    "javascripts/index.js"
+  ],
+  "styles": [
+    "stylesheets/index.styl"
+  ]
+}
