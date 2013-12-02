@@ -1,7 +1,7 @@
 {
-  "name": "shoelace-modal",
-  "repo": "mvanasse/shoelace-modal",
-  "description": "A modal module for shoelace",
+  "name": "modal",
+  "repo": "shoelace-ui/modal",
+  "description": "Unstyled modal",
   "version": "0.1.0",
   "keywords": [
     "shoelace"
