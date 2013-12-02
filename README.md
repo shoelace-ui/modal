@@ -4,8 +4,10 @@ Elegant modals for angular
 
 [![Selenium Test Status](https://saucelabs.com/browser-matrix/shoelace-modal.svg)](https://saucelabs.com/u/shoelace-modal)
 
-<img src='http://i.imgur.com/pnfcnGe.png' height='100' style='float: left;'/>
-<img src='http://i.imgur.com/KfcDv1r.png' height='100' style='float: left;'/>
+<img src='http://i.imgur.com/pnfcnGe.png' height='90' style='float: left; padding: 10px; margin: 10px; border: 1px solid #ccc;'/>
+<img src='http://i.imgur.com/KfcDv1r.png' height='90' style='float: left; padding: 10px; margin: 10px; border: 1px solid #ccc;'/>
+<img src='http://i.imgur.com/oSxki9A.png' height='90' style='float: left; padding: 10px; margin: 10px; border: 1px solid #ccc;'/>
+<img src='http://i.imgur.com/qlHnqhr.png' height='90' style='float: left; padding: 10px; margin: 10px; border: 1px solid #ccc;'/>
 
 ## Markup
 

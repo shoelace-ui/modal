@@ -48,7 +48,7 @@ exports.directive('slModal', function($parse) {
 
       var link = element;
       link.attr('href', 'javascript:;');
-      link.on('click', open);
+      link.bind('click', open);
 
       modalGroup.appendChild(container);
 
