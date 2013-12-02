@@ -1,0 +1,3 @@
+'javascripts/*': '@shoelace build'
+'stylesheets/*': '@shoelace build'
+'build/*':
