@@ -6,6 +6,12 @@ var angular = window.angular || require('angular');
 var modal = angular.module('shoelace-modal', []);
 
 /**
+ * Tell other modules where to find the module
+ */
+
+modal.name = 'shoelace-modal';
+
+/**
  * Append a unique element to `body`
  * as `modalGroup`. This lets IE7+
  * handle its contents properly.
