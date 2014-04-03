@@ -6,10 +6,9 @@
   "keywords": [
     "shoelace"
   ],
-  "dependencies": {
-    "CamShaft/component-angular": "*"
+  "development": {
+    "camshaft/component-angular": "*"
   },
-  "development": {},
   "license": "MIT",
   "main": "javascripts/index.js",
   "scripts": [
