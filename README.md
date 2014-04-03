@@ -13,32 +13,43 @@ Elegant modals for angular
 
 From `test.jade`:
 
-```jade
-mixin label(group, name)
-  label #{name}:
-    input(data-ng-model="#{group}.#{name}")
+```html
+<section data-ng-init="info1 = {header: 'info 1', content: 'content 2'}" data-sl-modal="data-sl-modal"><em>Click anywhere to open.</em>
+  <label>header:
+    <input data-ng-model="info1.header"/>
+  </label>
+  <label>content:
+    <input data-ng-model="info1.content"/>
+  </label>
+</section>
+<div>
+  <label>header:
+    <input data-ng-model="info1.header"/>
+  </label>
+  <label>content:
+    <input data-ng-model="info1.content"/>
+  </label>
+</div>
 
-section(data-ng-init="info1 = {header: 'info 1', content: 'content 2'}",
-        data-sl-modal)
-  em.
-    Click anywhere to open.
-  +label('info1', 'header')
-  +label('info1', 'content')
-div
-  +label('info1', 'header')
-  +label('info1', 'content')
-
-section(data-ng-init="info2 = {header: 'info 2', content: 'content 2'}")
-  em.
-    Click button to open.
-  +label('info2', 'header')
-  +label('info2', 'content')
-  button(data-ng-click="open()") OPEN 1
-  button(data-sl-modal) OPEN 2
-  div.test
-    +label('info2', 'header')
-    +label('info2', 'content')
-    button(data-ng-click="close()") CLOSE
+<section data-ng-init="info2 = {header: 'info 2', content: 'content 2'}"><em>Click button to open.</em>
+  <label>header:
+    <input data-ng-model="info2.header"/>
+  </label>
+  <label>content:
+    <input data-ng-model="info2.content"/>
+  </label>
+  <button data-ng-click="open()">OPEN 1</button>
+  <button data-sl-modal="data-sl-modal">OPEN 2</button>
+  <div class="test">
+    <label>header:
+      <input data-ng-model="info2.header"/>
+    </label>
+    <label>content:
+      <input data-ng-model="info2.content"/>
+    </label>
+    <button data-ng-click="close()">CLOSE</button>
+  </div>
+</section>
 ```
 
 ## Development
