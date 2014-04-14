@@ -5,3 +5,4 @@ build
 selenium
 *.log
 test/screenshots
+stylesheets/*.css
