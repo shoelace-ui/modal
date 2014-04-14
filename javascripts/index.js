@@ -4,6 +4,7 @@
 
 var angular = window.angular || require('angular');
 var modal = angular.module('shoelace-modal', []);
+var escape = require('on-escape');
 
 /**
  * Tell other modules where to find the module
@@ -67,6 +68,8 @@ exports.directive('slModal', function($parse) {
       function close() {
         container.className = active;
       }
+
+      escape(close);
 
       scope.$on('$destroy', function() {
         document.body.removeChild(container);
