@@ -18,6 +18,6 @@
     "stylesheets/index.styl"
   ],
   "dependencies": {
-    "segmentio/on-escape": "~0.0.3"
+    "segmentio/on-escape": "0.0.3"
   }
 }
