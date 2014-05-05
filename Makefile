@@ -1,20 +1,12 @@
 
-PORT ?= 3000
+PORT  ?= 3000
+SERVE ?= ./node_modules/.bin/serve
 
-build: components
-	@component build
+test: $(SERVE)
+	open http://localhost:$(PORT)/$(@D)/index.jade
+	$^ . --port $(PORT)
 
-components:
-	@component install
+$(SERVE):
+	npm install $(notdir $@)
 
-example: node_modules/.bin/serve build
-	./node_modules/.bin/serve . --port $(PORT) &
-	open http://localhost:$(PORT)/test/index.jade
-
-node_modules/.bin/serve:
-	npm install serve
-
-tests: build
-	@./node_modules/.bin/saucer test --local
-
-.PHONY: example build
+.PHONY: $(SERVE)
