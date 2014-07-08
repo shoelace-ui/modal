@@ -72,7 +72,7 @@ exports.directive('slModal', function($parse) {
       escape(close);
 
       scope.$on('$destroy', function() {
-        document.body.removeChild(container);
+        modalGroup.removeChild(container);
       });
 
     }
