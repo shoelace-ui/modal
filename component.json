@@ -3,9 +3,7 @@
   "repo": "shoelace-ui/modal",
   "description": "Unstyled modal",
   "version": "0.1.2",
-  "keywords": [
-    "shoelace"
-  ],
+  "keywords": ["shoelace", "popup"],
   "development": {
     "camshaft/component-angular": "*"
   },
@@ -15,7 +13,7 @@
     "javascripts/index.js"
   ],
   "styles": [
-    "stylesheets/index.styl"
+    "dist/index.css"
   ],
   "dependencies": {
     "segmentio/on-escape": "0.0.3"
