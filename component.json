@@ -12,9 +12,6 @@
   "scripts": [
     "javascripts/index.js"
   ],
-  "styles": [
-    "dist/index.css"
-  ],
   "dependencies": {
     "segmentio/on-escape": "0.0.3"
   }
