@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+}
+.sl-modal {
+  background: #fff;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.4);
+  margin: 80px auto;
+  max-width: 420px;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+.sl-modal-container {
+  display: none;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.sl-modal-active {
+  display: block !important;
+}
+.sl-modal-bg {
+  background: #333;
+  height: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.sl-modal-close-button {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
