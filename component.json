@@ -2,20 +2,20 @@
   "name": "modal",
   "repo": "shoelace-ui/modal",
   "description": "Unstyled modal",
-  "version": "0.1.3",
-  "keywords": ["shoelace", "popup"],
+  "version": "0.2.0",
+  "keywords": ["shoelace", "modal", "popup"],
   "development": {
     "camshaft/component-angular": "*"
   },
   "license": "MIT",
-  "main": "javascripts/index.js",
+  "main": "index.js",
   "scripts": [
-    "javascripts/index.js"
+    "index.js"
   ],
   "styles": [
     "dist/index.css"
   ],
   "dependencies": {
-    "segmentio/on-escape": "0.0.3"
+    "segmentio/on-escape": "^0.0.3"
   }
 }

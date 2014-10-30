@@ -44,12 +44,18 @@ exports.directive('slModal', function($parse) {
       content = content[0];
       content.className += ' sl-modal';
 
+      var closer = document.createElement('div');
+      closer.className = 'sl-modal-close-button';
+      closer.onclick = close;
+      closer.textContent = '×';
+      content.appendChild(closer);
+
       var container = document.createElement('div');
       container.className = active;
       container.appendChild(content);
 
       var bg = document.createElement('div');
-      bg.className = 'bg';
+      bg.className = 'sl-modal-bg';
       bg.onclick = close;
       container.appendChild(bg);
 
@@ -61,7 +67,7 @@ exports.directive('slModal', function($parse) {
 
       scope.open = open;
       function open() {
-        container.className = active + ' active';
+        container.className = active + ' sl-modal-active';
       }
 
       scope.close = close;

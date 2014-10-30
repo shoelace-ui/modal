@@ -1,0 +1,43 @@
+@require './variables'
+
+if modal--normalize == true
+  html
+  body
+    margin 0
+
+.sl-modal
+  background white
+  box-shadow 0 3px 16px rgba(black, .4)
+  margin (modal--padding * 4) auto
+  max-width 500px - (modal--padding * 4)
+  padding modal--padding
+  position relative
+  top 0
+  z-index 2
+
+  &-container
+    display none
+    height 100%
+    position fixed
+    top 0
+    width 100%
+    z-index modal--z-index
+
+  &-active
+    display block!important
+
+  &-bg
+    background #333
+    height 100%
+    opacity .6
+    position absolute
+    top 0
+    width 100%
+    z-index 1
+
+  &-close-button
+    cursor pointer
+    font-size modal--x-font-size
+    position absolute
+    right modal--padding
+    top modal--padding

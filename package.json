@@ -1,0 +1,24 @@
+{
+  "name": "modal",
+  "version": "0.2.0",
+  "description": "A simple modal",
+  "author": "Michael Andrew Vanasse <mail@mndvns.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shoelace-ui/modal"
+  },
+  "homepage": "https://github.com/shoelace-ui/modal",
+  "keywords": [
+    "shoelace",
+    "modal",
+    "popup"
+  ],
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/shoelace-ui/modal/issues"
+  },
+  "devDependencies": {
+    "serve": "^1.4.0"
+  }
+}
