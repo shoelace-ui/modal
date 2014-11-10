@@ -2,7 +2,7 @@
   "name": "modal",
   "repo": "shoelace-ui/modal",
   "description": "Unstyled modal",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": ["shoelace", "modal", "popup"],
   "development": {
     "camshaft/component-angular": "*"

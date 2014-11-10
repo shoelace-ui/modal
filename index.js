@@ -47,7 +47,8 @@ exports.directive('slModal', function($parse) {
       var closer = document.createElement('div');
       closer.className = 'sl-modal-close-button';
       closer.onclick = close;
-      closer.textContent = '×';
+      // closer.innerText for IE < 9
+      closer.textContent ? closer.textContent = '×' : closer.innerText = '×';
       content.appendChild(closer);
 
       var container = document.createElement('div');
