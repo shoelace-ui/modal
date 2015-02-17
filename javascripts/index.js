@@ -62,11 +62,17 @@ exports.directive('slModal', function($parse) {
       scope.open = open;
       function open() {
         container.className = active + ' active';
+        scope.$apply(function() {
+          scope.slModalShowing = true;
+        });
       }
 
       scope.close = close;
       function close() {
         container.className = active;
+        scope.$apply(function() {
+          scope.slModalShowing = false;
+        });
       }
 
       escape(close);
