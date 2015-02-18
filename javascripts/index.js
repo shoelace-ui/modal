@@ -33,7 +33,7 @@ exports = module.exports = modal;
  * Define sl-modal directive.
  */
 
-exports.directive('slModal', function($rootScope, $parse) {
+exports.directive('slModal', function($parse) {
   return {
     restrict: 'A',
     link: function(scope, element, attr) {
@@ -63,7 +63,6 @@ exports.directive('slModal', function($rootScope, $parse) {
       function open() {
         container.className = active + ' active';
         scope.slModalShowing = true;
-        $rootScope.$broadcast('modal:show');
         try {
           scope.$digest();
         } catch (e){}
@@ -73,7 +72,6 @@ exports.directive('slModal', function($rootScope, $parse) {
       function close() {
         container.className = active;
         scope.slModalShowing = false;
-        $rootScope.$broadcast('modal:hide');
         try {
           scope.$digest();
         } catch (e){}
