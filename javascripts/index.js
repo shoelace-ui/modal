@@ -57,11 +57,22 @@ exports.directive('slModal', function($parse) {
       link.attr('href', 'javascript:;');
       link.bind('click', open);
 
+      var delayShowHide = attr.delayShowHide;
+
       modalGroup.appendChild(container);
 
       scope.open = open;
       function open() {
-        container.className = active + ' active';
+        if (delayShowHide) {
+          container.className = active + ' active';  
+          setTimeout(function () {
+            scope.slModalShowing = true;
+            scope.$digest();
+          }, delayShowHide);
+          return
+        }
+
+        container.className = active + ' active';  
         scope.slModalShowing = true;
         try {
           scope.$digest();
@@ -70,6 +81,14 @@ exports.directive('slModal', function($parse) {
 
       scope.close = close;
       function close() {
+        if (delayShowHide) {
+          scope.slModalShowing = false;
+          setTimeout(function () {
+            container.className = active;
+            scope.$digest();
+          }, 250);
+          return
+        }
         container.className = active;
         scope.slModalShowing = false;
         try {
